@@ -1,4 +1,4 @@
-#! bin/bash
+#! /bin/bash
 
 echo "Please provide your it username(ex.it21606)"
 read it
