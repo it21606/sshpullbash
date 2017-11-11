@@ -19,9 +19,9 @@ read ans
 if [ "$ans" == "y" ] 
 then
 echo "Please re-enter your password to delete file from remote machine"
-ssh -tt $it@10.100.51.113 << HERE
-rm ~/Desktop/it_users.txt'
-~.
-HERE
+ssh -tt $it@10.100.51.113 << ENDSSH2
+rm ~/Desktop/it_users.txt' && exit
+ENDSSH2
+echo "Delete successful"
 fi
 exit
